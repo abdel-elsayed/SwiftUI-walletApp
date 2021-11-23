@@ -15,6 +15,8 @@
 		8EBFE11D274B366C001A7693 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBFE11C274B366C001A7693 /* CardListView.swift */; };
 		8EBFE11F274B36FE001A7693 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBFE11E274B36FE001A7693 /* Card.swift */; };
 		8EBFE121274B37AF001A7693 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBFE120274B37AF001A7693 /* MockData.swift */; };
+		8EC47E2B274C7C950047C5B4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC47E2A274C7C950047C5B4 /* CardView.swift */; };
+		8EC47E2D274C81500047C5B4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC47E2C274C81500047C5B4 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		8EBFE11C274B366C001A7693 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
 		8EBFE11E274B36FE001A7693 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		8EBFE120274B37AF001A7693 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		8EC47E2A274C7C950047C5B4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		8EC47E2C274C81500047C5B4 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				8EBFE10C274B318E001A7693 /* WalletAppApp.swift */,
 				8EBFE10E274B318E001A7693 /* ContentView.swift */,
 				8EBFE11C274B366C001A7693 /* CardListView.swift */,
+				8EC47E2A274C7C950047C5B4 /* CardView.swift */,
+				8EC47E2C274C81500047C5B4 /* Color+Extension.swift */,
 				8EBFE11E274B36FE001A7693 /* Card.swift */,
 				8EBFE120274B37AF001A7693 /* MockData.swift */,
 				8EBFE11A274B31CF001A7693 /* Header.swift */,
@@ -149,12 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC47E2B274C7C950047C5B4 /* CardView.swift in Sources */,
 				8EBFE10F274B318E001A7693 /* ContentView.swift in Sources */,
 				8EBFE121274B37AF001A7693 /* MockData.swift in Sources */,
 				8EBFE11B274B31CF001A7693 /* Header.swift in Sources */,
 				8EBFE11F274B36FE001A7693 /* Card.swift in Sources */,
 				8EBFE11D274B366C001A7693 /* CardListView.swift in Sources */,
 				8EBFE10D274B318E001A7693 /* WalletAppApp.swift in Sources */,
+				8EC47E2D274C81500047C5B4 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,7 @@ struct Card {
     let imageName: String
     var isSelected = false
     var backgroundColor: Color {
-        isSelected ? .purple : .yellow
+        isSelected ? Color.primaryPurple : Color.primaryYellow
     }
     var textColor: Color {
         isSelected ? .white : .black

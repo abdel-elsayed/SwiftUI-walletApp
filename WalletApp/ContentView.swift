@@ -9,17 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Header()
-            Spacer()
+        ScrollView{
+            VStack(spacing: 40) {
+                Header()
+                CardListView()
+                Spacer()
+            }
+            .padding(25)
         }
-        .padding(25)
-    
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(Wallet())
     }
 }

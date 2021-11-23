@@ -18,7 +18,7 @@ struct CardListView: View {
             Spacer()
             Button("Add new") {}
             .font(.callout)
-            .foregroundColor(.primary)
+            .foregroundColor(.primaryPurple)
             .padding(.trailing)
         }
         
@@ -30,11 +30,16 @@ struct CardListView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
                     ForEach(wallet.cards.indices, id: \.self){ index in
-                        Text(wallet.cards[index].cardNumber)
+                        CardView(card: wallet.cards[index]).onTapGesture {
+                            wallet.cards.indices.forEach { index in
+                                wallet.cards[index].isSelected = false
+                            }
+                            wallet.cards[index].isSelected.toggle()
+                    }
                     }
                 }
             }
-            Spacer()
+//            Spacer()
         }
     }
 }
