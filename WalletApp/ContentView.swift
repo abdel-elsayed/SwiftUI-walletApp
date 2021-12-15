@@ -13,9 +13,11 @@ struct ContentView: View {
             VStack(spacing: 40) {
                 Header()
                 CardListView()
+                BalanceView()
                 Spacer()
             }
             .padding(25)
+            
         }
     }
 }

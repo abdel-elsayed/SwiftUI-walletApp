@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Card {
+struct Card: Hashable {
     let income: Int
     let expenses: Int
     var balance: Int {
@@ -21,5 +21,9 @@ struct Card {
     }
     var textColor: Color {
         isSelected ? .white : .black
+    }
+    
+    var incomePercentage: Int {
+       Int(Double(balance) / Double(income) * 100)
     }
 }

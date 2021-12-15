@@ -22,6 +22,6 @@ final class Wallet: ObservableObject {
     @Published var cards = cardsData
     
     var selectedCard: Card {
-        cards.first(where: {$0.isSelected})!
+        cards.first(where: {$0.isSelected}) ?? Card(income: 2345, expenses: 543, cardNumber: "**** 3424", imageName: "american-express")
     }
 }
